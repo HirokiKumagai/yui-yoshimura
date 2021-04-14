@@ -36,6 +36,10 @@ header{
   background-position: -10px -40px;
 }
 
+.img_margin{
+  margin: 10px 0 ;
+}
+
 .content{
   margin-bottom: 30px;
 }
