@@ -60,6 +60,10 @@ ul.stage_list_name {
     margin: auto;
 }
 
+.red-font{
+  color: red;
+  font-size: large;
+}
 
 /* モバイル版 */
 @media (max-width: 1024px){
