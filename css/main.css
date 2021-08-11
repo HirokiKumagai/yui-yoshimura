@@ -65,6 +65,9 @@ ul.stage_list_name {
   font-size: large;
 }
 
+.m{
+  padding:5px;
+}
 /* モバイル版 */
 @media (max-width: 1024px){
   .top_wrapper {
