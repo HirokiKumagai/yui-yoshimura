@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Top from '../components/top'
+import Top from '../components/Top'
 import TableLayout from '../components/table/TableLayout'
 import TableHeader from '../components/table/TableHeader'
 import TableContent from '../components/table/TableContent'
