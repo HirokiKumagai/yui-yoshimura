@@ -1,0 +1,76 @@
+body{
+  width: 50vw;
+  margin:0 auto;
+}
+
+header{
+  margin: 15px auto;
+}
+
+.sub_header_title {
+    text-align: center;
+    margin-left: -200px;
+    font-size: 1.2rem;
+}
+
+.header_title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.top_wrapper {
+    height: 200px;
+    width: 100%;
+    background-image: url(../public/backgound_flower3.jpg);
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.yui_img{
+  background-image: url(../public/icon_yui.jpg);
+  width: 100px;
+  height: 130px;
+  position: absolute;
+  right: -10px;
+  bottom: -50px;
+  background-position: -10px -40px;
+}
+
+.img_margin{
+  margin: 10px 0 ;
+}
+
+.content{
+  margin-bottom: 30px;
+}
+.content_titile {
+    width: 100px;
+}
+.content_details {
+    width: 300px;
+}
+.content .title {
+    display: flex;
+    justify-content: space-around;
+}
+.stage_list {
+    display: flex;
+}
+ul.stage_list_name {
+    margin: auto;
+}
+
+.red-font{
+  color: red;
+  font-size: large;
+}
+
+.m{
+  padding:5px;
+}
+/* モバイル版 */
+@media (max-width: 1024px){
+  .top_wrapper {
+    background-position: 0;
+  }
+}

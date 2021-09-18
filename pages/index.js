@@ -1,9 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Top from '../components/Top'
-import TableLayout from '../components/table/TableLayout'
-import TableHeader from '../components/table/TableHeader'
-import TableContent from '../components/table/TableContent'
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -17,66 +13,91 @@ export default function Home() {
         <div className="">上方舞吉村流</div>
         <div className="">吉村 ゆい</div>
       </header>
-      <main className="w-screen">
-        <Top/>
-        <TableLayout>
-          <tr>
-            <TableHeader title="名前" />
-              <td className="
-                border
-                block
-                w-full
-                h-full
-                px-8 py-4
-                md:table-cell
-                md:w-2/3
-                ">
-                <div className="bg-yui-picture bg-cover bg-center h-20 w-20"/>
-                <p>吉村ゆい</p>
-              </td>
-          </tr>
-          <tr>
-            <TableHeader title="職業" />
-            <TableContent content="伝統芸能"/>
-          </tr>
-          <tr>
-            <TableHeader title="出身地" />
-            <TableContent content="福岡" />
-          </tr>
-          <tr>
-            <TableHeader title="プロフィール" />
-            <TableContent content="吉村ゆいは日本の古典芸能舞踊家\n
-            公益社団法人 日本舞踊協会会員\n
-            主に関東で活躍" />
-          </tr>
-          <tr>
-            <TableHeader title="出演予定" />
-            <TableContent content="2021年9月5日 国立大劇場 吉村流吉村会\n
-            2022年2月2日 国立大劇場 吉村ゆい舞の會\n
-            (2022年2月2日 国立大劇場 吉村ゆい舞の會はただいま延期とさせていただいております。)" />
-          </tr>
-          <tr>
-            <TableHeader title="お問い合わせ" />
-            <TableContent content="03-3263-0050\n
-            info@yoshimura-yui.com" />
-          </tr>
-          <tr>
-            <TableHeader title="稽古場紹介" />
-            <td className="
-              border
-              block
-              w-full
-              h-full
-              px-8 py-4
-              md:table-cell
-              md:w-2/3
-              ">
-                <Link href="https://www.yoshimura-yui-buyoschool.com/">
-                  <a className="border-b-2 border-red-500">吉村ゆいの 稽古場はこちら</a>
-                </Link>
-            </td>
-          </tr>
-        </TableLayout>
+      <main>
+        <div className="top_wrapper">
+          <div className="yui_img"></div>
+        </div>
+        <div className="middle_wrapper">
+          <div className="contents">
+            <div className="content">
+              <div className="title">
+                <div className="content_titile">
+                  名前
+                </div>
+                <div className="content_details">
+                  吉村 ゆい
+                </div>
+              </div>
+            </div>
+            <div className="content">
+              <div className="title">
+                <div className="content_titile">
+                  職業
+                </div>
+                <div className="content_details">
+                  古典芸能
+                </div>
+              </div>
+            </div>
+            <div className="content">
+              <div className="title">
+                <div className="content_titile">
+                  出身地
+                </div>
+                <div className="content_details">
+                  <p>福岡</p>
+                </div>
+              </div>
+            </div>
+            <div className="content">
+              <div className="title">
+                <div className="content_titile">
+                  プロフィール
+                </div>
+                <div className="content_details">
+                  <p>吉村ゆいは日本の古典芸能舞踊家</p>
+                  <p>公益社団法人 日本舞踊協会会員</p>
+                  <p>主に関東で活躍</p>
+                </div>
+              </div>
+            </div>
+            <div className="content">
+              <div className="title">
+                <div className="content_titile">
+                  出演予定
+                </div>
+                <div className="content_details">
+                  <p className="m">2021年9月5日 国立大劇場 吉村流吉村会</p>
+                  <p className="m">2022年2月2日 国立大劇場 吉村ゆい舞の會</p>
+                  <p className="">(2022年2月2日 国立大劇場 吉村ゆい舞の會はただいま延期とさせていただいております。)</p>
+                </div>
+              </div>
+            </div>
+            <div className="content">
+              <div className="title">
+                <div className="content_titile">
+                  お問い合わせ
+                </div>
+                <div className="content_details">
+                  <Link href="/contact">
+                    <a className="border-red-400 border-b-4">お問い合わせはこちら</a>
+                  </Link>
+                  <p>03-3263-0050</p>
+                </div>
+              </div>
+            </div>
+            <div className="content">
+              <div className="title">
+                <div className="content_titile">
+                  稽古場紹介
+                </div>
+                <div className="content_details">
+                  <a href="https://www.yoshimura-yui-buyoschool.com/">吉村ゆいの 稽古場はこちら</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   )
