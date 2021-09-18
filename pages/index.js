@@ -84,7 +84,7 @@ export default function Home() {
                   </Link>
                   <p>稽古場問い合わせ電話番号</p>
                   <p>03-3263-0050</p>
-                  <p>03-3263-0050</p>
+                  <p>090-9763-7878</p>
                 </div>
               </div>
             </div>
