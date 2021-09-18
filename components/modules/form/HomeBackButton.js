@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function HomeButtons({url}) {
+export default function HomeButtons({url, text}) {
   const classes = useStyles();
 
   return (
@@ -19,7 +19,7 @@ export default function HomeButtons({url}) {
       variant="outlined"
       href={url}
     >
-      Topページへ
+      {text}
     </Button>
   );
 }
