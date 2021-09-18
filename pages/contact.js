@@ -39,7 +39,8 @@ export default function Contact() {
         <FormEmail name="email" control={control} errors={errors} />
         <FormContent name="content" control={control} errors={errors} />
         <FormSendButton />
-        <HomeButtons/>
+        <HomeButtons url="/" />
+        <HomeButtons url="https://www.yoshimura-yui-buyoschool.com/" />
       </form>
     </div>
   );
