@@ -82,6 +82,8 @@ export default function Home() {
                   <Link href="/contact">
                     <a className="border-red-400 border-b-4">お問い合わせはこちら</a>
                   </Link>
+                  <p>稽古場問い合わせ電話番号</p>
+                  <p>03-3263-0050</p>
                   <p>03-3263-0050</p>
                 </div>
               </div>
