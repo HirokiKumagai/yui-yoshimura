@@ -14,7 +14,6 @@ export default function HomeButtons() {
 
   return (
     <Button
-      variant="contained"
       color="primary"
       className={classes.button}
       variant="outlined"
