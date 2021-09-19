@@ -14,8 +14,7 @@ export default function Contact() {
     reset,
   } = useForm();
   const onSubmit = (data, event) => {
-    console.log(data);
-    registerUser(event);
+    const result = registerUser(event);
   };
   const registerUser = async (event) => {
     event.preventDefault();
