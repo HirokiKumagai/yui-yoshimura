@@ -43,7 +43,6 @@ export default function Contact() {
           text="稽古場に関して"
         />
         <HomeButtons url="/" text="吉村ゆいに関して" />
-        <div>{process.env.SENDGRID_API_KEY}</div>
       </form>
     </div>
   );
