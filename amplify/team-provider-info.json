@@ -1,23 +1,33 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-yuiyoshimura-dev-94849-authRole",
-            "UnauthRoleArn": "arn:aws:iam::205825661311:role/amplify-yuiyoshimura-dev-94849-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::205825661311:role/amplify-yuiyoshimura-dev-94849-authRole",
-            "Region": "ap-northeast-1",
-            "DeploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
-            "UnauthRoleName": "amplify-yuiyoshimura-dev-94849-unauthRole",
-            "StackName": "amplify-yuiyoshimura-dev-94849",
-            "StackId": "arn:aws:cloudformation:ap-northeast-1:205825661311:stack/amplify-yuiyoshimura-dev-94849/debcbd70-1687-11ec-a16b-0e9b5e8bc693",
-            "AmplifyAppId": "d18ichih4e97o3"
-        },
-        "categories": {
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "d18ichih4e97o3",
-                    "type": "cicd"
-                }
-            }
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-yuiyoshimura-dev-94849-authRole",
+      "UnauthRoleArn": "arn:aws:iam::205825661311:role/amplify-yuiyoshimura-dev-94849-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::205825661311:role/amplify-yuiyoshimura-dev-94849-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
+      "UnauthRoleName": "amplify-yuiyoshimura-dev-94849-unauthRole",
+      "StackName": "amplify-yuiyoshimura-dev-94849",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:205825661311:stack/amplify-yuiyoshimura-dev-94849/debcbd70-1687-11ec-a16b-0e9b5e8bc693",
+      "AmplifyAppId": "d18ichih4e97o3"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d18ichih4e97o3",
+          "type": "cicd"
         }
+      },
+      "function": {
+        "sendgridSendFunction": {
+          "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
+          "s3Key": "amplify-builds/sendgridSendFunction-536335624f32777a5241-build.zip"
+        },
+        "SendSendgrid": {
+          "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
+          "s3Key": "amplify-builds/SendSendgrid-4262613249527463476a-build.zip"
+        }
+      }
     }
+  }
 }
