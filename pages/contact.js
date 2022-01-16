@@ -33,6 +33,13 @@ export default function Contact() {
   };
   return (
     <div className="lg:mx-auto">
+      <Head>
+        <title>上方舞吉村流吉村ゆい お問い合わせ</title>
+        <meta
+          name="description"
+          content="上方舞吉村流吉村ゆいへのお問い合わせ"
+        />
+      </Head>
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormName name="name" control={control} errors={errors} />
         <FormEmail name="email" control={control} errors={errors} />
