@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useForm } from "react-hook-form";
 import FormName from "../components/modules/form/FormName";
 import FormEmail from "../components/modules/form/FormEmail";
