@@ -27,7 +27,7 @@ export default function Contact() {
       headers: {
         "Content-Type": "application/json",
       },
-      method: "GET",
+      method: "POST",
     });
     const result = await res.json();
     return result;
