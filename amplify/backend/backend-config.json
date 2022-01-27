@@ -7,12 +7,7 @@
     }
   },
   "function": {
-    "sendgridSendFunction": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "SendSendgrid": {
+    "sendgrid": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
@@ -25,21 +20,39 @@
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "sendgridSendFunction",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        },
-        {
-          "category": "function",
-          "resourceName": "SendSendgrid",
+          "resourceName": "sendgrid",
           "attributes": [
             "Name",
             "Arn"
           ]
         }
       ]
+    }
+  },
+  "auth": {
+    "yuiyoshimura": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      }
     }
   }
 }

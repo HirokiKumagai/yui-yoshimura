@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-yuiyoshimura-dev-94849-unauthRole",
       "StackName": "amplify-yuiyoshimura-dev-94849",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:205825661311:stack/amplify-yuiyoshimura-dev-94849/debcbd70-1687-11ec-a16b-0e9b5e8bc693",
-      "AmplifyAppId": "d18ichih4e97o3"
+      "AmplifyAppId": "d18ichih4e97o3",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-yuiyoshimura-dev-94849-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "hosting": {
@@ -18,14 +19,13 @@
           "type": "cicd"
         }
       },
+      "auth": {
+        "undefined": {}
+      },
       "function": {
-        "sendgridSendFunction": {
+        "sendgrid": {
           "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
-          "s3Key": "amplify-builds/sendgridSendFunction-536335624f32777a5241-build.zip"
-        },
-        "SendSendgrid": {
-          "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
-          "s3Key": "amplify-builds/SendSendgrid-4262613249527463476a-build.zip"
+          "s3Key": "amplify-builds/sendgrid-70485136787530753247-build.zip"
         }
       }
     }
