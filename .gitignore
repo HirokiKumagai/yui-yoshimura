@@ -53,5 +53,7 @@ amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
 **.sample
+amplify/backend/function/jobboardnotifier/src/**/*.js
 #amplify-do-not-edit-end
+
 .env

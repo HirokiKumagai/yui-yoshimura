@@ -6,6 +6,8 @@ import FormContent from "../components/modules/form/FormContent";
 import FormSendButton from "../components/modules/form/FormSendButton";
 import HomeButtons from "../components/modules/form/HomeBackButton";
 
+import { API } from "aws-amplify";
+
 export default function Contact() {
   const {
     register,
@@ -19,7 +21,7 @@ export default function Contact() {
   };
   const registerUser = async (event) => {
     event.preventDefault();
-    const res = await fetch("/api/send", {
+    const res = await fetch("/send", {
       body: JSON.stringify({
         email: event.target.email.value,
         message: event.target.content.value,
@@ -30,7 +32,6 @@ export default function Contact() {
       method: "POST",
     });
     const result = await res.json();
-    return result;
   };
   return (
     <div className="lg:mx-auto">
@@ -51,6 +52,7 @@ export default function Contact() {
           text="稽古場に関して"
         />
         <HomeButtons url="/" text="吉村ゆいに関して" />
+        <p>{registerUser}</p>
       </form>
     </div>
   );
