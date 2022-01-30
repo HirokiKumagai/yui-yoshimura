@@ -21,17 +21,34 @@ export default function Contact() {
   };
   const registerUser = async (event) => {
     event.preventDefault();
-    const res = await fetch("/send", {
-      body: JSON.stringify({
+
+    const myInit = {
+      body: {
+        name: event.target.name.value,
         email: event.target.email.value,
         message: event.target.content.value,
-      }),
-      headers: {
-        "Content-Type": "application/json",
       },
-      method: "POST",
-    });
-    const result = await res.json();
+    };
+
+    const response = await API
+      .post("sendgrid", "/send", myInit)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((errors) => {
+        console.log(errors.response);
+      });
+
+    // const res = await fetch("/send", {
+    //   body: JSON.stringify({
+    //     email: event.target.email.value,
+    //     message: event.target.content.value,
+    //   }),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   method: "POST",
+    // });
   };
   return (
     <div className="lg:mx-auto">
