@@ -1,16 +1,8 @@
 import Head from 'next/head'
 import Link from "next/link"
 
-import { API } from "aws-amplify";
-
 export default function Home() {
-  const getMessage = async() => {
-    const response = await API.get("nodeapi", "/send");
-    message = response;
-    return ;
-  }
 
-  const message = "ここをクリック"
   return (
     <div>
       <Head>
@@ -21,7 +13,6 @@ export default function Home() {
       <header className="flex flex-col items-center my-4">
         <div className="">上方舞吉村流</div>
         <div className="">吉村 ゆい</div>
-        <div onClick={getMessage}>{message}</div>
       </header>
       <main>
         <div className="top_wrapper">

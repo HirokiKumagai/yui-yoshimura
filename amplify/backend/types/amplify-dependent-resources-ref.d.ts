@@ -5,6 +5,9 @@ export type AmplifyDependentResourcesAttributes = {
             "Arn": "string",
             "Region": "string",
             "LambdaExecutionRole": "string"
+        },
+        "yuiyoshimuracommon": {
+            "Arn": "string"
         }
     },
     "api": {
