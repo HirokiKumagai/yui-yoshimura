@@ -19,11 +19,20 @@ exports.handler = async (event) => {
     (async () => {
         try {
             await sgMail.send(msg);
+            const response = {
+                statusCode: 200,
+                message: "Email sent"
+            };
+            return response;
         } catch (error) {
             console.error(error);
             if (error.response) {
                 console.error(error.response.body);
             }
+            const response = {
+                statusCode: 400,
+            };
+            return response;
         }
     })();
 
@@ -47,16 +56,16 @@ exports.handler = async (event) => {
     // const response = {
     //     statusCode: 300,
     // };
-    const response = {
-        statusCode: 200,
-        //  Uncomment below to enable CORS requests
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Headers": "Content-Type",
-            "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
-        },
-    }
+    // const response = {
+    //     statusCode: 200,
+    //     //  Uncomment below to enable CORS requests
+    //     headers: {
+    //         "Access-Control-Allow-Origin": "*",
+    //         "Access-Control-Allow-Headers": "Content-Type",
+    //         "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+    //     },
+    // }
     // body: JSON.stringify(body),
-    return response;
+    return;
 };
 

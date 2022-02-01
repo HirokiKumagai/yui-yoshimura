@@ -25,7 +25,7 @@
       "function": {
         "sendgrid": {
           "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
-          "s3Key": "amplify-builds/sendgrid-59434c6e426c6e522f57-build.zip"
+          "s3Key": "amplify-builds/sendgrid-697671424741354d4349-build.zip"
         },
         "yuiyoshimuracommon": {
           "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
