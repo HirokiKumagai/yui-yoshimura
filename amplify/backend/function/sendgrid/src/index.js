@@ -66,6 +66,6 @@ exports.handler = async (event) => {
     //     },
     // }
     // body: JSON.stringify(body),
-    return;
+    return body;
 };
 
