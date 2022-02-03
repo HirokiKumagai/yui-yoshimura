@@ -19,6 +19,16 @@ export default function Contact() {
   const onSubmit = (data, event) => {
     const result = registerUser(event);
   };
+  const onSampleApi = async (e) =>{
+    console.log("success")
+    const test = await API.post("sampleApi", "/sampleApi", {body: "test"})
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((errors) => {
+        console.log(errors.response);
+      });
+  }
   const registerUser = async (event) => {
     event.preventDefault();
 
@@ -29,7 +39,7 @@ export default function Contact() {
         message: event.target.content.value,
       },
     };
-
+    console.log("success")
     const response = await API
       .post("sendgrid", "/send", myInit)
       .then((response) => {
@@ -38,17 +48,6 @@ export default function Contact() {
       .catch((errors) => {
         console.log(errors.response);
       });
-
-    // const res = await fetch("/send", {
-    //   body: JSON.stringify({
-    //     email: event.target.email.value,
-    //     message: event.target.content.value,
-    //   }),
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   method: "POST",
-    // });
   };
   return (
     <div className="lg:mx-auto">
@@ -69,6 +68,7 @@ export default function Contact() {
           text="稽古場に関して"
         />
         <HomeButtons url="/" text="吉村ゆいに関して" />
+        <p onClick={onSampleApi}>test</p>
         <p>{registerUser}</p>
       </form>
     </div>

@@ -8,10 +8,21 @@ export type AmplifyDependentResourcesAttributes = {
         },
         "yuiyoshimuracommon": {
             "Arn": "string"
+        },
+        "sampleFunction": {
+            "Name": "string",
+            "Arn": "string",
+            "Region": "string",
+            "LambdaExecutionRole": "string"
         }
     },
     "api": {
         "sendgrid": {
+            "RootUrl": "string",
+            "ApiName": "string",
+            "ApiId": "string"
+        },
+        "sampleApi": {
             "RootUrl": "string",
             "ApiName": "string",
             "ApiId": "string"

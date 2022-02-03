@@ -20,16 +20,22 @@
         }
       },
       "auth": {
-        "undefined": {}
+        "undefined": {},
+        "true": {},
+        "yuiyoshimura": {}
       },
       "function": {
         "sendgrid": {
           "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
-          "s3Key": "amplify-builds/sendgrid-697671424741354d4349-build.zip"
+          "s3Key": "amplify-builds/sendgrid-5930664350476e67596e-build.zip"
         },
         "yuiyoshimuracommon": {
           "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
           "s3Key": "amplify-builds/yuiyoshimuracommon-LambdaLayerVersion0e05a86b-build.zip"
+        },
+        "sampleFunction": {
+          "deploymentBucketName": "amplify-yuiyoshimura-dev-94849-deployment",
+          "s3Key": "amplify-builds/sampleFunction-786e7456415851615147-build.zip"
         }
       }
     }
