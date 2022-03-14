@@ -54,10 +54,20 @@ export default function Home() {
                 <div className="content_titile">出演予定</div>
                 <div className="content_details">
                   {/* <p className="m">2021年9月5日 国立大劇場 吉村流吉村会</p> */}
-                  <p className="m">
-                    2022年5月3日 国立大劇場 宗家吉村輝章 家元吉村ゆい
-                    襲名披露公演(延期)
-                  </p>
+                  <ul>
+                    <li
+                      className="m"
+                    >
+                      2022年4月29日 国立大劇場 日本舞踊協会主催
+                      第三十六回舞踊公演 出演予定
+                    </li>
+                    <li
+                      className="m"
+                    >
+                      2022年5月3日 国立大劇場 宗家吉村輝章 家元吉村ゆい
+                      襲名披露公演(延期)
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
